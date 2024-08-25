@@ -11,12 +11,24 @@ const coder=document.querySelector(".coder");
 const codername=document.querySelector(".codername");
 const header=document.querySelector(".header");
 
+
+if(inputBox.value === '')
+     {
+          notFound.style.display="none";
+          weatherBody.style.display="none";
+          header.style.display="flex";         
+          coder.style.display="none";
+          codername.style.display="none";   
+     }
+
 async function checkWeather(city){
 const id="864eea55aec848e80d877e68846e2d71";
 const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${id}`;
 const raw= await fetch(url);
 const weatherData= await raw.json();
 console.log(weatherData);
+
+//If there is no input
 
 // If data is not found and input is not found and who is developer.............
 

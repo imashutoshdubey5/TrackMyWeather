@@ -162,9 +162,22 @@
    .container{
      width: 360px;
      height: 740px;
-     background-color: #fff;
+     background-color: burlywood;
      padding: 28px;
      border-radius: 0px;
-     }  
+     border: 2px solid black;
+     }
+
+   .search-bar .btn
+ {
+    height: 46px;
+    width: 46px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+ }
+ .wind{
+   margin-left: 20px;
+ }
    }
    
