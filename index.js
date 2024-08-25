@@ -22,7 +22,7 @@ if(inputBox.value === '')
      }
 
 async function checkWeather(city){
-const id="864eea55aec848e80d877e68846e2d71";
+const id="put your Api Key";//put Api key in so that this web can fetch api
 const url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${id}`;
 const raw= await fetch(url);
 const weatherData= await raw.json();
